@@ -1,12 +1,12 @@
 #TO-Do-List
-# Define an empty list to store tasks
+
 tasks = []
-# Function to add a task
+
 def add_task():
     task = input("Enter a task: ")
     tasks.append({"task": task, "completed": False})
     print("Task added successfully!")
-# Function to view all tasks
+
 def view_tasks():
     if not tasks:
         print("No tasks to display.")
@@ -25,7 +25,7 @@ def mark_completed():
         print("Task marked as completed!")
     else:
         print("Invalid task number.")
-# Function to remove a task
+
 def remove_task():
     view_tasks()
     task_index = int(input("Enter the number of the task to remove: ")) - 1
@@ -34,7 +34,7 @@ def remove_task():
         print(f"Task '{removed_task['task']}' removed.")
     else:
         print("Invalid task number.")
-# Main loop
+
 while True:
     print("\nOptions:")
     print("1. Add a task")
